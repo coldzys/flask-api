@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "23501b6b-9b73-48ec-b7f1-8bc1dedcd64b",
+		"name": "02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/VNI/<date>",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/VNI",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"VNI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/VNI/<date>",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/VNI",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"VNI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/VNI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/VNI/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"VNI",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/VNI",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"date\":\"2021-07-26\",\r\n    \"price_close\": 11800.0,\r\n    \"price_open\": 11800.0,\r\n    \"price_high\": 11800.0,\r\n    \"price_low\": 11800.0,\r\n    \"volume\": 1999990.0,\r\n    \"change\": 0.0\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/VNI",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"VNI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/VNI/<date>",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"change\": -3.0\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/VNI/2021-07-26",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"VNI",
+						"2021-07-26"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
